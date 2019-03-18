@@ -1,0 +1,35 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul{
+  list-style-type: none;
+  text-align: right;
+  margin-right: 40px;
+  margin-top: 20px;
+  float: right;
+  background-color: white;
+  padding: 10px;
+}
+
+li{
+  display: inline-block;
+  margin-right: 30px;
+  color: red;
+}
+
+img{
+  float: left;
+}
+
+body{
+  background-color: grey;
+  clear: both;
+  color: white;
+}
+
+header{
+  overflow: hidden;
+}
