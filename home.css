@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
   box-sizing: border-box;
   margin: 0;
@@ -103,3 +104,110 @@ height: 19px;
 #promo {
   width: 100%;
 }
+=======
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.header {
+  display: flex;
+  position: fixed;
+  z-index: 9999;
+  background-color: white;
+  left: 0;
+  right: 0;
+  top: 0;
+  }
+.logo a {
+  font-family: 'Playfair Display', serif;
+  color: black;
+  font-size: 2em;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.main_nav ul li a {
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  margin: 45px 55px;
+}
+ul {
+  list-style-type: none;
+display: flex;
+justify-content: space-around;
+}
+li {
+margin: 5px;
+}
+.search_input {
+  height: 43px;
+  background: #f9f5f5;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding-left: 20px;
+}
+#search_button {
+  position: absolute;
+  top: 45%;
+ right: 10px;
+width: 19px;
+height: 19px;
+ background: transparent;
+ border: none;
+ outline: none;
+}
+.shopping{
+  padding-right: 44px;
+  padding-left: 50px;
+  position: relative;
+}
+#carouselExampleControls {
+  margin-top: 10px;
+  position: relative;
+}
+
+.home_slider_subtitle{
+  position: absolute;
+  top: 44%;
+  left: 44%;
+  padding: 10px 14px;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    background: #2f2f2f;
+    color: white;
+}
+.home_slider_title {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+    font-family: 'Playfair Display', serif;
+    font-size: 72px;
+    background: #937c6f;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.promo {
+  padding-top: 88px;
+  margin: 15px;
+}
+.promo_content {
+  text-align: center;
+  padding-bottom: 88px;
+}
+.promo_content_subtitle {
+  color: #937c6f;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.2em;
+}
+.promo_content_title {
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+}
+#promo {
+  width: 100%;
+}
+>>>>>>> 8c1f995c128845e88cba159214dea7a6b1554af7
