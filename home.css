@@ -32,30 +32,54 @@ display: flex;
 justify-content: space-around;
 }
 li {
-margin: 5px;
+  margin-top: 10px;
+}
+.search-box {
+  width: 100%;
+  position: relative;
 }
 .search_input {
-  height: 43px;
+  float: left;
   background: #f9f5f5;
-  width: 100%;
+  width: 90%;
+  font-size: 17px;
   border: none;
   outline: none;
-  padding-left: 20px;
+  padding: 6px;
+  margin-top: 6px;
 }
 #search_button {
   position: absolute;
-  top: 45%;
- right: 10px;
-width: 19px;
-height: 19px;
- background: transparent;
- border: none;
- outline: none;
+  top: 30%;
+  right: 40px;
+  width: 30px;
+  height: 20px;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor:pointer;
+  font-size: 20px;
+}
+.fa-search {
+  margin-right: 40px;
+}
+.login-registro a {
+  margin: 10px;
+  color: black;
 }
 .shopping{
-  padding-right: 44px;
-  padding-left: 50px;
+  padding: 0px 50px;
   position: relative;
+}
+.shopping ul li{
+  margin-left: 10px;
+  width: 30px;
+}
+.shopping a{
+  color: black;
+}
+.shopping a:hover{
+  color: lightblue;
 }
 #carouselExampleControls {
   margin-top: 10px;
@@ -104,110 +128,3 @@ height: 19px;
 #promo {
   width: 100%;
 }
-=======
-*{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-.header {
-  display: flex;
-  position: fixed;
-  z-index: 9999;
-  background-color: white;
-  left: 0;
-  right: 0;
-  top: 0;
-  }
-.logo a {
-  font-family: 'Playfair Display', serif;
-  color: black;
-  font-size: 2em;
-  margin-right: 20px;
-  margin-left: 20px;
-}
-.main_nav ul li a {
-  color: black;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1em;
-  margin: 45px 55px;
-}
-ul {
-  list-style-type: none;
-display: flex;
-justify-content: space-around;
-}
-li {
-margin: 5px;
-}
-.search_input {
-  height: 43px;
-  background: #f9f5f5;
-  width: 100%;
-  border: none;
-  outline: none;
-  padding-left: 20px;
-}
-#search_button {
-  position: absolute;
-  top: 45%;
- right: 10px;
-width: 19px;
-height: 19px;
- background: transparent;
- border: none;
- outline: none;
-}
-.shopping{
-  padding-right: 44px;
-  padding-left: 50px;
-  position: relative;
-}
-#carouselExampleControls {
-  margin-top: 10px;
-  position: relative;
-}
-
-.home_slider_subtitle{
-  position: absolute;
-  top: 44%;
-  left: 44%;
-  padding: 10px 14px;
-    font-family: 'Playfair Display', serif;
-    font-size: 18px;
-    background: #2f2f2f;
-    color: white;
-}
-.home_slider_title {
-  position: absolute;
-  top: 50%;
-  left: 30%;
-    font-family: 'Playfair Display', serif;
-    font-size: 72px;
-    background: #937c6f;
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-.promo {
-  padding-top: 88px;
-  margin: 15px;
-}
-.promo_content {
-  text-align: center;
-  padding-bottom: 88px;
-}
-.promo_content_subtitle {
-  color: #937c6f;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    letter-spacing: 0.2em;
-}
-.promo_content_title {
-    font-family: 'Playfair Display', serif;
-    font-size: 60px;
-}
-#promo {
-  width: 100%;
-}
->>>>>>> 8c1f995c128845e88cba159214dea7a6b1554af7
