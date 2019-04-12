@@ -54,8 +54,8 @@ li {
 }
 #search_button {
   position: absolute;
-  top: 30%;
-  right: 193px;
+  top: 18%;
+  right: 200px;
   width: 31px;
   height: 20px;
   background: transparent;
@@ -64,7 +64,7 @@ li {
   cursor:pointer;
   font-size: 20px;
 }
-#search_button:hover {
+#search_button:hover{
   color: lightblue;
 }
 .fa-search {
@@ -93,51 +93,4 @@ li {
 }
 .shopping a:hover{
   color: lightblue;
-}
-#carouselExampleControls {
-  margin-top: 10px;
-  position: relative;
-}
-
-.home_slider_subtitle{
-  position: absolute;
-  top: 44%;
-  left: 44%;
-  padding: 10px 14px;
-    font-family: 'Playfair Display', serif;
-    font-size: 18px;
-    background: #2f2f2f;
-    color: white;
-}
-.home_slider_title {
-  position: absolute;
-  top: 50%;
-  left: 30%;
-    font-family: 'Playfair Display', serif;
-    font-size: 72px;
-    background: #937c6f;
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-.promo {
-  padding-top: 88px;
-  margin: 15px;
-}
-.promo_content {
-  text-align: center;
-  padding-bottom: 88px;
-}
-.promo_content_subtitle {
-  color: #937c6f;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    letter-spacing: 0.2em;
-}
-.promo_content_title {
-    font-family: 'Playfair Display', serif;
-    font-size: 60px;
-}
-#promo {
-  width: 100%;
 }
