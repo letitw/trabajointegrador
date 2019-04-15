@@ -165,6 +165,7 @@ font-family: 'Playfair Display', serif;
 font-size: 12px;
 color: white;
 }
+<<<<<<< HEAD
 .hamb, #toggle, .nuevo_menu {
   display: none;
 }
@@ -233,3 +234,5 @@ color: white;
 
 
 }
+=======
+>>>>>>> d87cbd194a6f42093746380e98d2563da68e980c
