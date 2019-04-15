@@ -61,7 +61,7 @@ li {
 #search_button {
   position: absolute;
   top: 18%;
-  right: 200px;
+  right: 180px;
   width: 31px;
   height: 20px;
   background: transparent;
@@ -123,6 +123,7 @@ li {
   margin: 8px 0;
   border-bottom: 1px solid;
   color: white;
+
 }
 .texto-registro input {
   border: none;
@@ -146,4 +147,129 @@ li {
   font-size: 18px;
   cursor: pointer;
   margin: 12px 0;
+}
+
+.texto-checkbox {
+  border: 0;
+  text-align: left;
+
+}
+.texto-checkbox input {
+  margin-right: 5px;
+}
+
+.texto-checkbox label {
+  font-size: 11px;
+}
+.pie {
+  position: absolute;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+  text-decoration: none;
+  top: 93%;
+  text-align: center;
+  }
+.columna-pie {
+  margin-left: 135px;
+  margin-right: 135px;
+}
+.logo-pie {
+    margin-bottom: 30px;
+}
+.logo-pie a {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  color: white;
+}
+.nav-pie ul li a {
+  list-style-type: none;
+  color: white;
+  margin-top: 30px;
+  margin-right: 40px;
+}
+.redes-pie {
+  margin-top: 51px;
+}
+.redes-pie ul li a {
+  list-style-type: none;
+  color: white;
+  margin-right: 50px;
+}
+ul:last-child {
+ justify-content: center;
+}
+.copyright {
+  margin-top: 56px;
+padding-bottom: 13px;
+font-family: 'Playfair Display', serif;
+font-size: 12px;
+color: white;
+}
+.hamb, #toggle, .nuevo_menu {
+  display: none;
+}
+@media(max-width: 960px) {
+  .main_nav, .search-box, .search_input, #search_button, .fa-search, .login-registro, .shopping {
+    display: none;
+  }
+  .header {
+    display: inline-block;
+
+     text-align: right;
+     height: 70px;
+     line-height: 70px;
+  }
+  .logo {
+    text-align: left;
+  }
+  .nuevo_menu {
+    display: inline-block ;
+    margin: -6px 30px 0 0;
+    text-align: center;
+    width: 100%;
+    display: none;
+    background-color: black;
+  }
+  .nuevo_menu a {
+    clear: right;
+    text-decoration: none;
+    color: white;
+    line-height: 70px;
+    display: block;
+    border-bottom: 1px solid white;
+    margin: 0;
+
+  }
+  .nuevo_menu a: {
+    text-decoration: underline;
+  }
+  .hamb {
+    display: block;
+    cursor: pointer;
+    margin: -76px 3% 0 0;
+    font-size: 26px;
+    color: white;
+    line-height: 70px;
+    width: 26px;
+    float: right;
+
+  }
+  #toggle {
+    display: inline-block;
+    display: none;
+  }
+  #toggle:checked + .nuevo_menu {
+    display: block;
+  }
+@media(max-width: 460px) {
+  .pie {
+    width: 105%;
+  }
+  .nav-pie ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+
+
 }

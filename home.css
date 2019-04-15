@@ -54,8 +54,8 @@ li {
 }
 #search_button {
   position: absolute;
-  top: 30%;
-  right: 193px;
+  top: 18%;
+  right: 200px;
   width: 31px;
   height: 20px;
   background: transparent;
@@ -97,6 +97,7 @@ li {
 #carouselExampleControls {
   margin-top: 10px;
   position: relative;
+
 }
 
 .home_slider_subtitle{
@@ -112,7 +113,7 @@ li {
 .home_slider_title {
   position: absolute;
   top: 50%;
-  left: 30%;
+  left: 31%;
     font-family: 'Playfair Display', serif;
     font-size: 72px;
     background: #937c6f;
@@ -144,6 +145,55 @@ li {
 }
 #promo {
   width: 100%;
+}
+.promo_image_content {
+  position: absolute;
+  top: 43.6%;
+}
+.promo_image_content_1{
+  right: 0;
+  text-align: right;
+  padding-right: 28px;
+}
+.promo_image_title {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  color: #FFFFFF;
+  padding-right:
+}
+.promo_image_subtitle {
+  font-size: 14px;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+.promo_image_content_2 {
+  width: 92%;
+  text-align: center;
+  background: rgba(35, 35, 35, 0.63);
+  padding-bottom: 9px;
+  padding-top: 2px;
+}
+.promo_image_content_3 {
+  top: 30%;
+  left: 30px;
+  background: #232323;
+  padding-left: 10px;
+  text-align: center;
+  padding-right: 22px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.promo_link {
+width: 100%;
+height: 60px;
+background-color: #2f2f2f;
+text-align: center;
+}
+.promo_link a {
+  font-family: 'Playfair Display', serif;
+  color: white;
+  font-size: 14px;
+  line-height: 60px;
 }
 .arrivals {
   padding-top: 88px;
@@ -200,14 +250,15 @@ li {
 .newsletter {
   position: relative;
 padding-top: 93px;
+padding-bottom: 93px;
 }
 .newsletter_image img {
   width: 100%;
 }
 .newsletter-content {
   position: absolute;
-  top: 40%;
-  left: 5%;
+  top: 33%;
+  left: 12%;
   text-align: center;
 }
 .newsletter_subtitle {
@@ -233,7 +284,7 @@ height: 46px;
 background: #FFFFFF;
 padding-left: 35px;
 padding-right: 35px;
-border: none;
+border: 1px solid grey;
 outline: none;
 }
 .newsletter_button {
@@ -257,4 +308,145 @@ margin-top: 19px;
 font-style: italic;
 color: white;
 
+}
+.pie {
+  background-color: rgba(0,0,0,0.9);
+  text-decoration: none;
+  bottom: 0;
+  text-align: center;
+  }
+.columna-pie {
+  margin-left: 135px;
+  margin-right: 135px;
+}
+.logo-pie {
+    margin-bottom: 30px;
+}
+.logo-pie a {
+  font-family: 'Playfair Display', serif;
+  font-size: 60px;
+  color: white;
+}
+.nav-pie ul li a {
+  list-style-type: none;
+  color: white;
+  margin-top: 30px;
+  margin-right: 40px;
+}
+.redes-pie {
+  margin-top: 51px;
+}
+.redes-pie ul li a {
+  list-style-type: none;
+  color: white;
+  margin-right: 50px;
+}
+ul:last-child {
+ justify-content: center;
+}
+.copyright {
+  margin-top: 56px;
+padding-bottom: 13px;
+font-family: 'Playfair Display', serif;
+font-size: 12px;
+color: white;
+}
+.hamb, #toggle, .nuevo_menu {
+  display: none;
+}
+@media(max-width: 960px) {
+  .main_nav, .search-box, .search_input, #search_button, .fa-search, .login-registro, .shopping {
+    display: none;
+  }
+  .header {
+    display: inline-block;
+
+     text-align: right;
+     height: 70px;
+     line-height: 70px;
+  }
+  .logo {
+    text-align: left;
+  }
+  .nuevo_menu {
+    display: inline-block ;
+    margin: -6px 30px 0 0;
+    text-align: center;
+    width: 100%;
+    display: none;
+    background-color: black;
+  }
+  .nuevo_menu a {
+    clear: right;
+    text-decoration: none;
+    color: white;
+    line-height: 70px;
+    display: block;
+    border-bottom: 1px solid white;
+    margin: 0;
+
+  }
+  .nuevo_menu a: {
+    text-decoration: underline;
+  }
+  .hamb {
+    display: block;
+    cursor: pointer;
+    margin: -76px 6% 0 0;
+    font-size: 26px;
+    color: white;
+    line-height: 70px;
+    width: 26px;
+    float: right;
+
+  }
+  #toggle {
+    display: inline-block;
+    display: none;
+  }
+  #toggle:checked + .nuevo_menu {
+    display: block;
+  }
+  .home_slider_title {
+    font-size: 43px;
+  }
+  .home_slider_subtitle {
+    top: 39%;
+    left: 44%;
+  }
+  .newsletter-content {
+
+  }
+@media(max-width: 460px) {
+  #carouselExampleControls {
+      left: 3%;
+      margin-top: 15%;
+  }
+  .home_slider_subtitle {
+    display: none;
+  }
+  .home_slider_title {
+    display: none;
+  }
+  .promo_item {
+    margin-left: 25px;
+    margin-top: 30px;
+  }
+  .promo_image_content_2 {
+    width: 87%;
+  }
+  .promo_image_content_3 {
+    left: 11%;
+  }
+  .rating {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .product_info {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  .newsletter_image {
+    margin-right: -7%;
+  }
 }
