@@ -31,6 +31,7 @@ ul {
   list-style-type: none;
 display: flex;
 justify-content: space-around;
+margin-left: 6%;
 }
 li {
   margin-top: 10px;
@@ -38,8 +39,8 @@ li {
 .search-box {
   width: 100%;
   position: relative;
-  padding-left: 40px;
-  left: 65px;
+  padding-left: 4%;
+  left: 4%;
 }
 .search_input {
   float: left;
@@ -55,8 +56,8 @@ li {
 #search_button {
   position: absolute;
   top: 18%;
-  right: 200px;
-  width: 31px;
+  right: 37%;
+  width: 3%;
   height: 20px;
   background: transparent;
   border: none;

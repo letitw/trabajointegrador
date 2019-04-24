@@ -19,6 +19,7 @@ body {
   left: 0;
   right: 0;
   top: 0;
+  font-size: 12px;
   }
 .logo a {
   font-family: 'Playfair Display', serif;
@@ -36,40 +37,42 @@ body {
 }
 ul {
   list-style-type: none;
-display: flex;
-justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: auto;
 }
 li {
-  margin-top: 10px;
+  margin-top: 9px;
+  margin-left: -20px;
 }
 .search-box {
   width: 100%;
   position: relative;
   padding-left: 40px;
-  left: 65px;
+  left: 30px;
 }
 .search_input {
   float: left;
   background: white;
-  width: 60%;
-  font-size: 17px;
+  width: 61%;
+  font-size: 10px;
   border: none;
   outline: none;
   padding: 6px;
-  margin-top: 6px;
+  margin-top: 5px;
   border-radius: 20px;
 }
 #search_button {
   position: absolute;
   top: 18%;
-  right: 180px;
-  width: 31px;
+  right: 33%;
+  width: 9%;
   height: 20px;
   background: transparent;
   border: none;
   outline: none;
   cursor:pointer;
-  font-size: 20px;
+  font-size: 15px;
 }
 #search_button:hover{
   color: lightblue;
@@ -83,17 +86,16 @@ li {
   font-family: 'Open Sans', sans-serif;
 }
 .login-registro a {
-  margin: 10px;
+  margin: 28px;
   color: white;
 }
 .shopping{
-  padding: 0px 20px;
   position: relative;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 .shopping ul li{
   margin-left: 10px;
-  width: 30px;
+  width: 20px;
 }
 .shopping a{
   color: white;
@@ -113,14 +115,11 @@ li {
   color: white;
   text-align: center;
 }
-<<<<<<< HEAD
 .caja-login h2 {
   border-bottom: 2px solid lightblue;
   margin-bottom: 50px;
   padding: 13px 0;
 }
-=======
->>>>>>> d87cbd194a6f42093746380e98d2563da68e980c
 .caja-registro h1 {
   font-size: 48px;
   border-bottom: 2px solid lightblue;
