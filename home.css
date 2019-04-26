@@ -12,6 +12,7 @@
   left: 0;
   right: 0;
   top: 0;
+  font-size: 12px;
   }
 .logo a {
   font-family: 'Playfair Display', serif;
@@ -31,10 +32,11 @@ ul {
   list-style-type: none;
 display: flex;
 justify-content: space-around;
-margin-left: 6%;
+margin-bottom: auto;
 }
 li {
-  margin-top: 10px;
+  margin-top: 9px;
+  margin-left: -20px;
 }
 .search-box {
   width: 100%;
@@ -45,31 +47,30 @@ li {
 .search_input {
   float: left;
   background: white;
-  width: 60%;
-  font-size: 17px;
+  width: 61%;
+  font-size: 10px;
   border: none;
   outline: none;
   padding: 6px;
-  margin-top: 6px;
+  margin-top: 5px;
   border-radius: 20px;
 }
 #search_button {
   position: absolute;
   top: 18%;
-  right: 37%;
-  width: 3%;
+  right: 33%;
+  width: 9%;
   height: 20px;
   background: transparent;
   border: none;
   outline: none;
   cursor:pointer;
-  font-size: 20px;
+  font-size: 15px;
 }
 #search_button:hover {
   color: lightblue;
 }
 .fa-search {
-  margin-right:20px;
   width: 50%;
 }
 .login-registro{
@@ -77,17 +78,16 @@ li {
   font-family: 'Open Sans', sans-serif;
 }
 .login-registro a {
-  margin: 10px;
+  margin: 28px;
   color: white;
 }
 .shopping{
-  padding: 0px 20px;
   position: relative;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 .shopping ul li{
   margin-left: 10px;
-  width: 30px;
+  width: 20px;
 }
 .shopping a{
   color: white;
@@ -103,24 +103,26 @@ li {
 
 .home_slider_subtitle{
   position: absolute;
-  top: 44%;
-  left: 46%;
+  top: 43%;
+  left: 50%;
   padding: 10px 14px;
     font-family: 'Playfair Display', serif;
     font-size: 18px;
     background: #2f2f2f;
     color: white;
+    transform: translateX(-50%);
 }
 .home_slider_title {
   position: absolute;
   top: 50%;
-  left: 31%;
+  left: 50%;
     font-family: 'Playfair Display', serif;
-    font-size: 72px;
+    font-size: 59px;
     background: #937c6f;
     color: white;
     padding-left: 20px;
     padding-right: 20px;
+    transform: translateX(-50%);
 }
 .container {
   padding-left: 13px;
@@ -250,8 +252,8 @@ text-align: center;
 }
 .newsletter {
   position: relative;
-padding-top: 93px;
-padding-bottom: 93px;
+  padding-top: 93px;
+  padding-bottom: 93px;
 }
 .newsletter_image img {
   width: 100%;
@@ -259,7 +261,7 @@ padding-bottom: 93px;
 .newsletter-content {
   position: absolute;
   top: 33%;
-  left: 12%;
+  left: 6%;
   text-align: center;
 }
 .newsletter_subtitle {
@@ -409,14 +411,78 @@ color: white;
     display: block;
   }
   .home_slider_title {
-    font-size: 43px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 5vw;
   }
   .home_slider_subtitle {
-    top: 39%;
-    left: 44%;
+    top: 41%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .newsletter {
+    position: relative;
+    padding-top: 93px;
+    padding-bottom: 93px;
+  }
+  .newsletter_image img {
+    width: 100%;
   }
   .newsletter-content {
-
+    position: absolute;
+    top: 28%;
+    left: 6%;
+    text-align: center;
+  }
+  .newsletter_subtitle {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 2vw;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+  }
+  .newsletter_title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3vw;
+    color: white;
+  }
+  .newsletter_form_container {
+    position: relative;
+    padding-left: 35px;
+    padding-right: 90px;
+  }
+  .newsletter_input {
+    width: 98%;
+  height: 46px;
+  background: #FFFFFF;
+  padding-left: 35px;
+  padding-right: 35px;
+  border: 1px solid grey;
+  outline: none;
+  }
+  .newsletter_button {
+    position: absolute;
+    top: 0;
+    width: 13%;
+    height: 100%;
+    background: #937c6f;
+    color: white;
+    font-size: 1.3vw;
+    letter-spacing: 0.2em;
+    border: none;
+    outline: none;
+    right: 7%;
+  }
+  .newsletter_text {
+  font-family:  'Open Sans', sans-serif;
+  font-size: 1.7vw;
+  margin-top: 4px;
+  font-style: italic;
+  color: white;
+  margin-right: 89px;
+  margin-left: 44px;
+  
   }
 @media(max-width: 460px) {
   #carouselExampleControls {
