@@ -10,7 +10,7 @@
   if ($_POST){
     $warning = validator();
     if(count($warning)== 0){
-      header("location:registro.php");exit;
+      header("location:home.html");exit;
     }
   }
 $nombreOK = $_POST["nombre"];
@@ -53,7 +53,7 @@ $emailOK = $_POST["email"];
            <li><i class="fas fa-unlock"></i></li>
            <li><a href="login.html">Login</a></li>
            <li><i class="fas fa-user"></i></li>
-           <li><a href="registro.html">Registrarse</a></li>
+           <li><a href="registro.php">Registrarse</a></li>
          </ul>
 
        </div>
@@ -70,7 +70,7 @@ $emailOK = $_POST["email"];
     <a href="accesorios.html">ACCESORIOS</a>
     <a href="contacto.html">CONTACTO</a>
     <a href="login.html">LOGIN</a>
-    <a href="registro.html">REGISTRARSE</a>
+    <a href="registro.php">REGISTRARSE</a>
   </div>
  </header>
 
