@@ -12,10 +12,10 @@
     if(count($warning)== 0){
       header("location:home.html");exit;
     }
+    $nombreOK = $_POST["nombre"];
+    $apellidoOK = $_POST["apellido"];
+    $emailOK = $_POST["email"];
   }
-$nombreOK = $_POST["nombre"];
-$apellidoOK = $_POST["apellido"];
-$emailOK = $_POST["email"];
 
  ?>
  <!DOCTYPE html>

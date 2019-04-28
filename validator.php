@@ -3,6 +3,7 @@
 function validator(){
   $warning = [];
 
+  //como valido el archivo a subir??? consultar en clase
 
  if ($_POST["nombre"] == ""){
    $warning["nombre"]= "Ooops, faltó tu nombre";
@@ -13,6 +14,8 @@ function validator(){
  } else if ($_POST["nombre"] == "nombre"){
    $warning["nombre"]= "Ooops, faltó tu nombre";
  }
+
+ //Si pongo Torre Walsh no me valida el espacio como caracter valido. Ver como cambiarlo
 
  if ($_POST["apellido"] == ""){
    $warning["apellido"]= "Ooops, faltó tu apellido";
