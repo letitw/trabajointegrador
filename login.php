@@ -17,13 +17,11 @@ require_once("validator.php");
       var_dump($_POST);
       
       
-      if ($_POST["email"] == $usuarioBD["email"]){
+      if ($_POST["email"] == $usuarioBD["email"] && password_verify($_POST['pass'], $usuarioBD['pass'])){
         $_SESSION["email"] = $usuarioBD["email"];
-      }
+        header("location:home.html");exit;
+      }     
       
-      password_verify ($_POST['pass'], $usuarioBD['password']);
-      
-      header("location:inicio.php");exit;
     }
   }
 
