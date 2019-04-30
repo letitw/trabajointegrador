@@ -1,5 +1,6 @@
 <?php
 
+
 function validator(){
   $warning = [];
 
@@ -14,6 +15,14 @@ function validator(){
  } else if ($_POST["nombre"] == "nombre"){
    $warning["nombre"]= "Ooops, faltó tu nombre";
  }
+ if($_FILES['foto']["error"]===UPLOAD_ERR_OK){
+    $tipoImagen=$_FILES['foto']['type'];
+    if ($tipoImagen == 'image/png' || $tipoImagen == 'image/jpg' || $tipoImagen == 'image/jpeg' || $tipoImagen == 'image/gif'){ 
+      
+    }else {
+        $warning['foto'] = 'Seleccione una imagen con formato válido';
+    }
+  }
 
  //Si pongo Torre Walsh no me valida el espacio como caracter valido. Ver como cambiarlo
 

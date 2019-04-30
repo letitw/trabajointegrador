@@ -1,13 +1,28 @@
 <?php
-  require_once("validator.php");
+session_start();
+require_once("validator.php");
 
   //BORRADOR:
   $warning = [];
 
   if ($_POST){
-    $warning = validatorLogin();
+    //$warning = validatorLogin();
     if (count($warning) == 0){
+      
       //LOGUearlo
+
+      $usuarioArchivo = file_get_contents("usuarios.json");
+      $usuarioBD = json_decode ($usuarioArchivo, true);
+      var_dump($usuarioBD);
+      var_dump($_POST);
+      
+      
+      if ($_POST["email"] == $usuarioBD["email"]){
+        $_SESSION["email"] = $usuarioBD["email"];
+      }
+      
+      password_verify ($_POST['pass'], $usuarioBD['password']);
+      
       header("location:inicio.php");exit;
     }
   }
@@ -75,6 +90,7 @@
 <br>
 <div class="contenedor-login">
    <div class="caja-login">
+     <form action="" method="POST">
      <h2>¡A comprar!</h2>
      <div class="texto-login">
        <input type="text" placeholder="Tu E-Mail" name="email" value="">
@@ -94,6 +110,7 @@
    </div>
  </div>
 </div>
+</form>
 <footer class="pie">
 <div class="columna-pie">
   <div class="logo-pie">
