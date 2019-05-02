@@ -10,7 +10,7 @@
   if ($_POST){
     $warning = validator();
     if(count($warning)== 0){
-      header("location:home.html");exit;
+      header("location:home.php");exit;
     }
     $nombreOK = $_POST["nombre"];
     $apellidoOK = $_POST["apellido"];
@@ -34,7 +34,7 @@
  <div class="super_container">
  <!-- Header -->
  <header class="header">
-   <div class="logo"><a href="home.html">Wish</a></div>
+   <div class="logo"><a href="home.php">Wish</a></div>
  			<nav class="main_nav">
  				<ul>
  					<li><a href="clothes.html">ROPA</a></li>
@@ -51,7 +51,7 @@
        <div class="login-registro">
          <ul>
            <li><i class="fas fa-unlock"></i></li>
-           <li><a href="login.html">Login</a></li>
+           <li><a href="login.php">Login</a></li>
            <li><i class="fas fa-user"></i></li>
            <li><a href="registro.php">Registrarse</a></li>
          </ul>
@@ -69,7 +69,7 @@
     <a href="ropa.html">ROPA</a>
     <a href="accesorios.html">ACCESORIOS</a>
     <a href="contacto.html">CONTACTO</a>
-    <a href="login.html">LOGIN</a>
+    <a href="login.php">LOGIN</a>
     <a href="registro.php">REGISTRARSE</a>
   </div>
  </header>
@@ -188,7 +188,7 @@
 <footer class="pie">
 <div class="columna-pie">
   <div class="logo-pie">
-<a href="home.html">Wish</a>
+<a href="home.php">Wish</a>
   </div>
   <div class="nav-pie">
     <ul>

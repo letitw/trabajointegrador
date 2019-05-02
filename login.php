@@ -30,7 +30,7 @@
 <div class="super_container">
 <!-- Header -->
 <header class="header">
-  <div class="logo"><a href="home.html">Wish</a></div>
+  <div class="logo"><a href="home.php">Wish</a></div>
 			<nav class="main_nav">
 				<ul>
 					<li><a href="clothes.html">ROPA</a></li>
@@ -97,7 +97,7 @@
 <footer class="pie">
 <div class="columna-pie">
   <div class="logo-pie">
-<a href="home.html">Wish</a>
+<a href="home.php">Wish</a>
   </div>
   <div class="nav-pie">
     <ul>
