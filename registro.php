@@ -3,19 +3,32 @@
 
   $warning = [];
 
+  $sinErrores = true;
   $nombreOK = "";
   $apellidoOK = "";
   $emailOK = "";
+  $passOK= "";
+  $errorFoto="";
 
   if ($_POST){
     $warning = validator();
     if(count($warning)== 0){
+      $nombreOK = $_POST["nombre"];
+      $apellidoOK = $_POST["apellido"];
+      $emailOK = $_POST["email"];
+      $passOK = password_hash($_POST['password'], PASSWORD_DEFAULT);
+      ;
+
+      $usuario=[
+        "email"=> $emailOK,
+        "pass"=> $passOK, 
+      ];
+      $usuarioJson = json_encode($usuario);
+      file_put_contents('usuarios.json', $usuarioJson);
       header("location:home.php");exit;
     }
-    $nombreOK = $_POST["nombre"];
-    $apellidoOK = $_POST["apellido"];
-    $emailOK = $_POST["email"];
   }
+
 
  ?>
  <!DOCTYPE html>
@@ -87,7 +100,7 @@
 
 <div class="caja-registro">
   <h1>Registrate</h1>
-    <form class="" action="registro.php" method="POST">
+    <form class="" action="registro.php" method="POST" enctype="multipart/form-data">
       <div class="texto-registro">
         <label for="nombre"></label>
         <input id="nombre" type="text" name="nombre" value="<?=$nombreOK?>" placeholder="Nombre">
@@ -174,7 +187,10 @@
       <div class="texto-registro">
         <label for="foto">Mi foto de perfil</label>
         <input type="file" name="foto" value="foto">
-      </div>
+        <?php if(isset($warning["foto"])): ?>
+          <p style="color:red;font-size:11px;"><?=$warning["foto"]?></p>
+        <?php endif; ?>
+      </div>  
       <div class="texto-checkbox">
         <input id=mailing type="checkbox" name="mailing" value="si">
         <label for="mailing">Quiero que me envien ofertas por mail!</label>
