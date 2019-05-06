@@ -267,7 +267,7 @@ color: white;
   .hamb {
     display: block;
     cursor: pointer;
-    margin: -76px 3% 0 0;
+    margin: -76px 4% 0 0;
     font-size: 26px;
     color: white;
     line-height: 70px;
@@ -282,6 +282,19 @@ color: white;
   #toggle:checked + .nuevo_menu {
     display: block;
   }
+}
+.pie {
+  width: 105%;
+  }
+.nav-pie ul {
+ 
+}
+.nav-pie ul li a {
+
+}
+.redes-pie {
+  margin-right: 5vw;
+}
 @media(max-width: 460px) {
   .pie {
     width: 105%;

@@ -98,19 +98,18 @@ li {
 #carouselExampleControls {
   margin-top: 10px;
   position: relative;
-
+  width: 100%;
 }
-
 .home_slider_subtitle{
   position: absolute;
-  top: 43%;
+  top: 42%;
   left: 50%;
   padding: 10px 14px;
-    font-family: 'Playfair Display', serif;
-    font-size: 18px;
-    background: #2f2f2f;
-    color: white;
-    transform: translateX(-50%);
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8vw;
+      background: #2f2f2f;
+      color: white;
+      transform: translateX(-50%);
 }
 .home_slider_title {
   position: absolute;
@@ -261,19 +260,19 @@ text-align: center;
 .newsletter-content {
   position: absolute;
   top: 33%;
-  left: 6%;
+  left: 4vw;
   text-align: center;
 }
 .newsletter_subtitle {
   font-family: 'Open Sans', sans-serif;
   color: white;
-  font-size: 14px;
+  font-size: 1vw;
   font-weight: 600;
   letter-spacing: 0.2em;
 }
 .newsletter_title {
   font-family: 'Playfair Display', serif;
-  font-size: 55px;
+  font-size: 4vw;
   color: white;
 }
 .newsletter_form_container {
@@ -306,7 +305,7 @@ outline: none;
 }
 .newsletter_text {
 font-family:  'Open Sans', sans-serif;
-font-size: 14px;
+font-size: 1.3vw;
 margin-top: 19px;
 font-style: italic;
 color: white;
@@ -335,6 +334,7 @@ color: white;
   color: white;
   margin-top: 30px;
   margin-right: 40px;
+  font-size: 2vw;
 }
 .redes-pie {
   margin-top: 51px;
@@ -395,7 +395,7 @@ color: white;
   .hamb {
     display: block;
     cursor: pointer;
-    margin: -76px 6% 0 0;
+    margin: -76px 4% 0 0;
     font-size: 26px;
     color: white;
     line-height: 70px;
@@ -409,6 +409,11 @@ color: white;
   }
   #toggle:checked + .nuevo_menu {
     display: block;
+  }
+  #carouselExampleControls {
+    margin-top: 5vw;
+    position: relative;
+    width: 104vw;
   }
   .home_slider_title {
     top: 50%;
@@ -427,7 +432,7 @@ color: white;
     padding-bottom: 93px;
   }
   .newsletter_image img {
-    width: 100%;
+    width: 105%;
   }
   .newsletter-content {
     position: absolute;
@@ -441,6 +446,7 @@ color: white;
     font-size: 2vw;
     font-weight: 600;
     letter-spacing: 0.2em;
+    margin-top: 1vw;
   }
   .newsletter_title {
     font-family: 'Playfair Display', serif;
@@ -482,12 +488,25 @@ color: white;
   color: white;
   margin-right: 89px;
   margin-left: 44px;
-  
+
+}
+.pie {
+  width: 105%;
   }
+.nav-pie ul {
+  display: block;
+}
+.nav-pie ul li a {
+  font-size: 2vw;
+}
+.redes-pie {
+  margin-right: 5vw;
+}
 @media(max-width: 460px) {
   #carouselExampleControls {
-      left: 3%;
       margin-top: 15%;
+      width: 110vw;
+
   }
   .home_slider_subtitle {
     display: none;
@@ -519,48 +538,53 @@ color: white;
   }
 
   /* prueba leti mobile */
-
+.newsletter_subtitle {
+  margin-top: 1vw;
+}
   .newsletter_title {
-    font-size: 20px;
+    font-size: 4vw;
   }
-
   .newsletter_text {
-    color: black;
-    font-size: 12px;
+    font-size: 1.7vw;
+    margin-left: 20vw;
+    margin-top: -2vw;
   }
-
   .newsletter_form_container {
     padding: 10px;
   }
-
-  .redes-pie {
-    margin-top: 20px;
-  }
-  .redes-pie ul li a {
-    list-style-type: none;
-    color: white;
-    margin-right: 50px;
-
+.pie {
+  width: 115%;
 }
-
+.nav-pie ul {
+  text-align: center;
+}
 .nav-pie ul li a {
   list-style-type: none;
   color: white;
   margin-right: 10px;
-
 }
-
+.redes-pie {
+  margin-top: 20px;
+}
+.redes-pie ul li a {
+  list-style-type: none;
+  color: white;
+  margin-right: 50px;
+}
 .copyright {
  margin-top: 20px;
 }
-
 .newsletter_input {
-  width: 50%;
+  width: 62%;
   padding-right: 20px;
-  height: 46px;
+  height: 7vw;
   background: #FFFFFF;
   border: 1px solid grey;
   outline: none;
 }
-=======
->>>>>>> d87cbd194a6f42093746380e98d2563da68e980c
+.newsletter_button {
+  top: 10px;
+  width: 13%;
+  height: 7.1vw;
+  font-size: 1.4vw;
+}
