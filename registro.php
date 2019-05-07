@@ -21,7 +21,7 @@
 
       $usuario=[
         "email"=> $emailOK,
-        "pass"=> $passOK, 
+        "pass"=> $passOK,
       ];
       $usuarioJson = json_encode($usuario);
       file_put_contents('usuarios.json', $usuarioJson);
@@ -190,12 +190,12 @@
         <?php if(isset($warning["foto"])): ?>
           <p style="color:red;font-size:11px;"><?=$warning["foto"]?></p>
         <?php endif; ?>
-      </div>  
+      </div>
       <div class="texto-checkbox">
         <input id=mailing type="checkbox" name="mailing" value="si">
         <label for="mailing">Quiero que me envien ofertas por mail!</label>
       </div>
-    <div class="">
+    <div class="buton_registro">
       <button type="submit" name="button">REGISTRAME</button>
     </div>
 </form>

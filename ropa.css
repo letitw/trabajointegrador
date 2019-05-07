@@ -255,12 +255,19 @@ color: white;
   #toggle:checked + .nuevo_menu {
     display: block;
   }
-
-
+  .pie {
+    width: 105%;
+    }
+  .nav-pie ul {
+    display: block;
+  }
+  .nav-pie ul li a {
+    font-size: 2vw;
+  }
+  .redes-pie {
+    margin-right: 5vw;
   }
 @media(max-width: 460px) {
-
-
   .promo_item {
     margin-left: 25px;
     margin-top: 30px;
@@ -279,9 +286,17 @@ color: white;
     text-align: center;
     margin-bottom: 16px;
   }
-
-
-
+  .pie {
+    width: 115%;
+  }
+  .nav-pie ul {
+    text-align: center;
+  }
+  .nav-pie ul li a {
+    list-style-type: none;
+    color: white;
+    margin-right: 10px;
+  }
   .redes-pie {
     margin-top: 20px;
   }
@@ -289,19 +304,7 @@ color: white;
     list-style-type: none;
     color: white;
     margin-right: 50px;
-
-}
-
-.nav-pie ul li a {
-  list-style-type: none;
-  color: white;
-  margin-right: 10px;
-
-}
-
-.copyright {
- margin-top: 20px;
-}
-
-=======
->>>>>>> d87cbd194a6f42093746380e98d2563da68e980c
+  }
+  .copyright {
+   margin-top: 20px;
+  }

@@ -235,10 +235,9 @@ color: white;
   }
   .header {
     display: inline-block;
-
-     text-align: right;
-     height: 70px;
-     line-height: 70px;
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
   }
   .logo {
     text-align: left;
@@ -273,7 +272,6 @@ color: white;
     line-height: 70px;
     width: 26px;
     float: right;
-
   }
   #toggle {
     display: inline-block;
@@ -282,28 +280,38 @@ color: white;
   #toggle:checked + .nuevo_menu {
     display: block;
   }
-}
-.pie {
-  width: 105%;
-  }
-.nav-pie ul {
- 
-}
-.nav-pie ul li a {
-
-}
-.redes-pie {
-  margin-right: 5vw;
-}
-@media(max-width: 460px) {
   .pie {
     width: 105%;
+    }
+  .nav-pie ul {
+    display: block;
+  }
+  .nav-pie ul li a {
+    font-size: 2vw;
+  }
+  .redes-pie {
+    margin-right: 5vw;
+  }
+@media(max-width: 460px) {
+  .pie {
+    width: 115%;
   }
   .nav-pie ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
+    text-align: center;
   }
-
-
-}
+  .nav-pie ul li a {
+    list-style-type: none;
+    color: white;
+    margin-right: 10px;
+  }
+  .redes-pie {
+    margin-top: 20px;
+  }
+  .redes-pie ul li a {
+    list-style-type: none;
+    color: white;
+    margin-right: 50px;
+  }
+  .copyright {
+   margin-top: 20px;
+  }
