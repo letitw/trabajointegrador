@@ -50,9 +50,9 @@
    <div class="logo"><a href="home.php">Wish</a></div>
  			<nav class="main_nav">
  				<ul>
- 					<li><a href="clothes.html">ROPA</a></li>
- 					<li><a href="accessories.html">ACCESORIOS</a></li>
- 					<li><a href="contacto.html">CONTACTO</a></li>
+ 					<li><a href="ropa.php">ROPA</a></li>
+ 					<li><a href="accessories.php">ACCESORIOS</a></li>
+ 					<li><a href="contact.php">CONTACTO</a></li>
  				</ul>
  			</nav>
        <div class="search-box">
@@ -79,9 +79,9 @@
    <label class="hamb" for="toggle">&#9776;</label>
    <input type="checkbox" id="toggle">
   <div class="nuevo_menu">
-    <a href="ropa.html">ROPA</a>
-    <a href="accesorios.html">ACCESORIOS</a>
-    <a href="contacto.html">CONTACTO</a>
+    <a href="ropa.php">ROPA</a>
+    <a href="accesorios.php">ACCESORIOS</a>
+    <a href="contact.php">CONTACTO</a>
     <a href="login.php">LOGIN</a>
     <a href="registro.php">REGISTRARSE</a>
   </div>
@@ -209,13 +209,13 @@
   <div class="nav-pie">
     <ul>
       <li>
-       <a href="ropa.html">ROPA</a>
+       <a href="ropa.php">ROPA</a>
       </li>
       <li>
-       <a href="accesorios.html">ACCESORIOS</a>
+       <a href="accesorios.php">ACCESORIOS</a>
      </li>
      <li>
-      <a href="contacto.html">CONTACTO</a>
+      <a href="contact.php">CONTACTO</a>
      </li>
      <li>
       <a href="faqs.html">PREGUNTAS FRECUENTES</a>

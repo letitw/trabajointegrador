@@ -19,7 +19,7 @@
   				<ul>
   					<li><a href="ropa.php">ROPA</a></li>
   					<li><a href="accesorios.php">ACCESORIOS</a></li>
-  					<li><a href="contacto.html">CONTACTO</a></li>
+  					<li><a href="contact.php">CONTACTO</a></li>
   				</ul>
   			</nav>
         <div class="search-box">
@@ -51,7 +51,7 @@
     <div class="nuevo_menu">
       <a href="ropa.php">ROPA</a>
       <a href="accesorios.php">ACCESORIOS</a>
-      <a href="contacto.html">CONTACTO</a>
+      <a href="contact.php">CONTACTO</a>
       <a href="login.php">LOGIN</a>
       <a href="registro.php">REGISTRARSE</a>
 
@@ -175,13 +175,13 @@
   <div class="nav-pie">
     <ul>
       <li>
-       <a href="ropa.html">ROPA</a>
+       <a href="ropa.php">ROPA</a>
       </li>
       <li>
-       <a href="accesorios.html">ACCESORIOS</a>
+       <a href="accesorios.php">ACCESORIOS</a>
      </li>
      <li>
-      <a href="contacto.html">CONTACTO</a>
+      <a href="contacto.php">CONTACTO</a>
      </li>
      <li>
       <a href="faqs.html">PREGUNTAS FRECUENTES</a>
