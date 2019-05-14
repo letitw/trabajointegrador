@@ -1,5 +1,6 @@
 <?php
   require_once("validator.php");
+  require('conexion.php');
 
   $warning = [];
 
@@ -23,10 +24,18 @@
         "email"=> $emailOK,
         "pass"=> $passOK,
       ];
-      $usuarioJson = json_encode($usuario);
-      file_put_contents('usuarios.json', $usuarioJson);
-      header("location:home.php");exit;
-    }
+      }
+        $nombreOK = trim($_POST['nombre']);
+        $emailOK = trim($_POST['email']);
+        $passOK = trim(password_hash($_POST['password'], PASSWORD_DEFAULT));
+
+        $query = $conex->prepare("INSERT INTO usuarios (nombre, email, password) VALUES (:nombre, :mail, :clave)");
+        $query->bindValue(':nombre', $nombreOK);
+        $query->bindValue(':mail', $emailOK);
+        $query->bindValue(':clave', $passOK);
+        $query->execute();
+        header("location:home.php");exit;
+
   }
 
 
